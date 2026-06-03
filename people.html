@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People | SQUID Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg class="squid-icon" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="#1c2c5a"/>
+        <circle cx="10.5" cy="12" r="1.6" fill="white"/>
+        <circle cx="17.5" cy="12" r="1.6" fill="white"/>
+        <path d="M7.5 22 Q5.5 27 4.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M9.5 23 Q8.5 28 8.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M12 23.5 Q11.5 29 11.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M16 23.5 Q16.5 29 16.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M18.5 23 Q19.5 28 19.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20.5 22 Q22.5 27 23.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html" class="active">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="application.html">Undergraduate Application</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── BANNER ── -->
+  <section class="page-banner banner-slate">
+    <h1>Meet the Team</h1>
+  </section>
+
+  <!-- ── TEAM ── -->
+  <section class="team-section">
+    <div class="team-member">
+
+      <div class="member-photo-wrap">
+        <div class="member-photo">
+          <img src="files/sydney-reichin.jpg" alt="Dr. Sydney Reichin" />
+        </div>
+        <a href="https://drive.google.com/file/d/1GxuY-56F-HCtqfStSHpnS3QT_8ZWS53J/view?usp=share_link" target="_blank" rel="noopener" class="btn btn-slate" style="font-size:0.65rem;">Download CV</a>
+      </div>
+
+      <div class="member-info">
+        <p class="member-name">Dr. Sydney Reichin</p>
+        <p class="member-role">Lab Director</p>
+        <p class="member-bio">
+          Sydney Reichin is an Industrial and Organizational Psychologist specializing in predicting, understanding, and addressing workplace deviance. Her research focuses on personality, implicit motives, and psychometric assessments, particularly related to maladaptive traits such as the motive to aggress. Recently, she has expanded her work to include security, terrorism, and targeted violence, striving to enhance resilience against attacks on soft targets and to improve threat evaluation and mitigation in workplace settings.
+        </p>
+        <a href="contact.html" class="btn btn-slate">Contact</a>
+      </div>
+
+    </div>
+
+    <!--
+      ADD MORE TEAM MEMBERS:
+      Copy the <div class="team-member"> block above and paste it here
+      for each additional lab member (grad students, RAs, etc.)
+    -->
+
+  </section>
+
+  <footer>
+    <p>© 2025 SQUID Lab &mdash; North Carolina State University</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

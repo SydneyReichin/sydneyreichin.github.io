@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergraduate Application | SQUID Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg class="squid-icon" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="#1c2c5a"/>
+        <circle cx="10.5" cy="12" r="1.6" fill="white"/>
+        <circle cx="17.5" cy="12" r="1.6" fill="white"/>
+        <path d="M7.5 22 Q5.5 27 4.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M9.5 23 Q8.5 28 8.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M12 23.5 Q11.5 29 11.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M16 23.5 Q16.5 29 16.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M18.5 23 Q19.5 28 19.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20.5 22 Q22.5 27 23.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="application.html" class="active">Undergraduate Application</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HEADER ── -->
+  <div class="app-header">
+    <div class="app-header-logo">
+      <svg class="squid-icon" viewBox="0 0 28 32" fill="none">
+        <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="white"/>
+        <circle cx="10.5" cy="12" r="1.6" fill="#1c2c5a"/>
+        <circle cx="17.5" cy="12" r="1.6" fill="#1c2c5a"/>
+        <path d="M7.5 22 Q5.5 27 4.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M9.5 23 Q8.5 28 8.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M12 23.5 Q11.5 29 11.5 32" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M16 23.5 Q16.5 29 16.5 32" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M18.5 23 Q19.5 28 19.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20.5 22 Q22.5 27 23.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+    </div>
+    <h1>Undergraduate Application</h1>
+    <p>Please complete the application below if you are currently an undergraduate student at North Carolina State University and would like to be involved with the SQUID Lab. Thank you for your interest!</p>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="app-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,0 L0,0 Z" fill="#1c2c5a"/>
+    </svg>
+  </div>
+
+  <!-- ── FORM ── -->
+  <!--
+    FORM SETUP (GitHub Pages is static — you need a form backend):
+    1. Sign up free at https://formspree.io
+    2. Create a new form → copy your form ID (looks like "xvoeyzal")
+    3. Replace "YOUR_FORM_ID" below with your actual ID
+    Forms are then emailed to your Formspree account email.
+  -->
+  <section class="app-form-section">
+    <form
+      class="app-form"
+      action="https://formspree.io/f/xwvjklkk"
+      method="POST"
+    >
+      <p class="required-note">Fields marked * are required.</p>
+
+      <!-- Name row -->
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="field-label" for="firstName">First name *</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="lastName">Last name *</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+      </div>
+
+      <!-- NCSU email -->
+      <div class="form-group">
+        <label class="field-label" for="ncsuEmail">NCSU email *</label>
+        <input type="email" id="ncsuEmail" name="ncsuEmail" placeholder="unity@ncsu.edu" required />
+      </div>
+
+      <!-- Preferred name & pronouns -->
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="field-label" for="preferredName">Preferred name</label>
+          <input type="text" id="preferredName" name="preferredName" />
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="pronouns">Pronouns</label>
+          <input type="text" id="pronouns" name="pronouns" placeholder="e.g. she/her" />
+        </div>
+      </div>
+
+      <!-- Year -->
+      <div class="form-group">
+        <label class="field-label">What year are you? *</label>
+        <ul class="options-list">
+          <li><label><input type="radio" name="year" value="Freshman" required /> Freshman</label></li>
+          <li><label><input type="radio" name="year" value="Sophomore" /> Sophomore</label></li>
+          <li><label><input type="radio" name="year" value="Junior" /> Junior</label></li>
+          <li><label><input type="radio" name="year" value="Senior" /> Senior</label></li>
+          <li><label><input type="radio" name="year" value="Other" /> Other</label></li>
+        </ul>
+      </div>
+
+      <!-- Major -->
+      <div class="form-group">
+        <label class="field-label">What is your major? *</label>
+        <ul class="options-list">
+          <li><label><input type="radio" name="major" value="Psychology" required /> Psychology</label></li>
+          <li><label><input type="radio" name="major" value="Other" /> Other</label></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div class="form-group">
+        <label class="field-label">Which of the following classes have you taken? *</label>
+        <ul class="options-list">
+          <li><label><input type="checkbox" name="courses" value="Research Methods (PSY 230)" /> Research Methods (PSY 230)</label></li>
+          <li><label><input type="checkbox" name="courses" value="Stats 1 (ST 311)" /> Stats 1 (ST 311)</label></li>
+          <li><label><input type="checkbox" name="courses" value="Industrial-Organizational Psychology (PSY 307)" /> Industrial-Organizational Psychology (PSY 307)</label></li>
+          <li><label><input type="checkbox" name="courses" value="Advanced Methods in Psychology (PSY 465)" /> Advanced Methods in Psychology (PSY 465)</label></li>
+          <li><label><input type="checkbox" name="courses" value="Personality (PSY 370)" /> Personality (PSY 370)</label></li>
+          <li><label><input type="checkbox" name="courses" value="None of the above" /> None of the above</label></li>
+          <li><label><input type="checkbox" name="courses" value="Other" /> Other</label></li>
+        </ul>
+      </div>
+
+      <!-- Essay -->
+      <div class="form-group">
+        <label class="field-label" for="essay">Briefly describe how the Squid Lab will help you achieve your academic and/or career goals? *</label>
+        <textarea id="essay" name="essay" rows="5" required></textarea>
+      </div>
+
+      <!-- CV instruction -->
+      <div class="form-group">
+        <p class="form-note">
+          Please email your Resume/CV to the lab director at
+          <a href="mailto:slreichi@ncsu.edu" style="color:var(--dark-navy);">slreichi@ncsu.edu</a>
+          with subject line <em>"Squid Lab Undergraduate Application"</em> *
+        </p>
+        <ul class="options-list">
+          <li><label><input type="checkbox" name="cvSent" value="yes" required /> I have completed this step</label></li>
+        </ul>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Undergraduate Application</button>
+
+      <!-- Formspree redirect on success — optional, remove or customize -->
+      <input type="hidden" name="_subject" value="New Squid Lab Undergraduate Application" />
+      <input type="hidden" name="_next" value="https://sydneyreichin.github.io/application.html?submitted=true" />
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 SQUID Lab &mdash; North Carolina State University</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Show a thank-you message if redirected back after Formspree submission
+    if (window.location.search.includes('submitted=true')) {
+      const form = document.querySelector('.app-form');
+      form.innerHTML = '<p style="text-align:center; font-size:1rem; padding:40px 0; color:var(--dark-navy);">Thank you for your application! We will be in touch soon.</p>';
+    }
+  </script>
+</body>
+</html>

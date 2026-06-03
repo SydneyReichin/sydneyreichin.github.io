@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SQUID Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg class="squid-icon" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="#1c2c5a"/>
+        <circle cx="10.5" cy="12" r="1.6" fill="white"/>
+        <circle cx="17.5" cy="12" r="1.6" fill="white"/>
+        <path d="M7.5 22 Q5.5 27 4.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M9.5 23 Q8.5 28 8.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M12 23.5 Q11.5 29 11.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M16 23.5 Q16.5 29 16.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M18.5 23 Q19.5 28 19.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20.5 22 Q22.5 27 23.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="application.html">Undergraduate Application</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── BANNER ── -->
+  <section class="contact-banner">
+    <div class="contact-banner-inner">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- ── CONTACT BODY ── -->
+  <section class="contact-body">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>Dr. Sydney Reichin</h2>
+      <p>Department of Psychology, College of Humanities and Social Sciences, North Carolina State University, Raleigh, NC 27607</p>
+      <p><a href="mailto:slreichi@ncsu.edu" style="color:var(--dark-navy);">slreichi@ncsu.edu</a></p>
+    </div>
+
+    <!-- Form -->
+    <!--
+      FORM SETUP (GitHub Pages is static — you need a form backend):
+      1. Sign up free at https://formspree.io
+      2. Create a new form → copy your form ID (looks like "xvoeyzal")
+      3. Replace "YOUR_FORM_ID" below with your actual ID
+    -->
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/xrevgpgb"
+      method="POST"
+    >
+      <div class="contact-form-row">
+        <input class="contact-field" type="text" name="name" placeholder="Name" required />
+        <input class="contact-field" type="email" name="email" placeholder="Email" required />
+      </div>
+
+      <input class="contact-field full" type="text" name="subject" placeholder="Subject" required />
+
+      <textarea class="contact-field textarea full" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+
+      <input type="hidden" name="_subject" value="New message from SQUID Lab website" />
+
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>© 2025 SQUID Lab &mdash; North Carolina State University</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

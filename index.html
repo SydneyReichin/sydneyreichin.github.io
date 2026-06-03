@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQUID Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg class="squid-icon" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="#1c2c5a"/>
+        <circle cx="10.5" cy="12" r="1.6" fill="white"/>
+        <circle cx="17.5" cy="12" r="1.6" fill="white"/>
+        <path d="M7.5 22 Q5.5 27 4.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M9.5 23 Q8.5 28 8.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M12 23.5 Q11.5 29 11.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M16 23.5 Q16.5 29 16.5 32" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M18.5 23 Q19.5 28 19.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20.5 22 Q22.5 27 23.5 31" stroke="#1c2c5a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="application.html">Undergraduate Application</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-box">
+      <h1>Welcome to the<br>Squid Lab</h1>
+      <p>We strive to <strong>S</strong>cientifically <strong>QU</strong>antify<br>&amp; <strong>I</strong>nvestigate <strong>D</strong>eviance.</p>
+    </div>
+  </section>
+
+  <!-- ── NEWS + FEATURED RESEARCH ── -->
+  <section class="home-split">
+
+    <!-- News -->
+    <div class="home-news">
+      <div class="home-news-logo">
+        <svg class="squid-icon" viewBox="0 0 28 32" fill="none">
+          <path d="M14 1 L8 7 Q6 4 4 3 Q7 6 8 9" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M14 1 L20 7 Q22 4 24 3 Q21 6 20 9" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <ellipse cx="14" cy="14" rx="7.5" ry="9" fill="white"/>
+          <circle cx="10.5" cy="12" r="1.6" fill="#1c2c5a"/>
+          <circle cx="17.5" cy="12" r="1.6" fill="#1c2c5a"/>
+          <path d="M7.5 22 Q5.5 27 4.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M9.5 23 Q8.5 28 8.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M12 23.5 Q11.5 29 11.5 32" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M16 23.5 Q16.5 29 16.5 32" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M18.5 23 Q19.5 28 19.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+          <path d="M20.5 22 Q22.5 27 23.5 31" stroke="white" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="nav-logo-text"><span class="squid">squid</span><span class="lab">LAB</span></div>
+      </div>
+
+      <h2>News and<br>Announcements</h2>
+
+      <p class="ann-title">The SQUID Lab will be admitting a PhD Student in the Fall of 2025</p>
+
+      <p class="ann-body">Dr. Sydney Reichin is an Assistant Professor in the Industrial and Organizational Psychology program at North Carolina State University. She will be admitting a student to begin in the Fall of 2025.</p>
+
+      <a href="people.html" class="btn btn-outline-white">Learn More</a>
+    </div>
+
+    <!-- Featured Research -->
+    <div class="home-featured">
+      <h2>Featured Research</h2>
+      <h3>Recommendations for Assessing Vulnerabilities in Soft Targets and Crowded Places</h3>
+      <p>Our latest publication offers a comprehensive review of tools used to assess vulnerabilities in soft targets and crowded places (ST-CPs), such as malls, stadiums, and places of worship. Drawing on expert interviews and current practices, we provide practical recommendations to improve assessments and guide future research in this critical area.</p>
+      <div class="btn-group">
+        <a href="https://www.tandfonline.com/doi/abs/10.1080/1057610X.2025.2488285" target="_blank" rel="noopener" class="btn btn-dark">Read Publication</a>
+        <a href="research.html" class="btn btn-dark">View All Research</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 SQUID Lab &mdash; North Carolina State University</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
