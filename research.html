@@ -39,9 +39,9 @@
         In the SQUID Lab, we study the predictors and consequences of deviance across various contexts, with a primary focus on organizational settings. Our research is organized into three broad streams:
       </p>
       <ul class="research-streams">
-        <li>1. Implicit Motives and Personality</li>
-        <li>2. Terrorism and Targeted Violence</li>
-        <li>3. Personnel Selection and Psychometrics</li>
+        <li>Implicit Motives &amp; Personality</li>
+        <li>Terrorism &amp; Targeted Violence</li>
+        <li>Personnel Selection &amp; Psychometrics</li>
       </ul>
     </div>
   </section>
@@ -155,36 +155,35 @@
   <!-- ── INSIDE THE SQUID LAB ── -->
   <section class="inside-lab">
     <h2>Inside the SQUID Lab</h2>
-    <div class="inside-lab-posters">
-
-      <div class="inside-lab-item">
-        <a href="https://drive.google.com/file/d/1tFSBnp_8B-YDHZlTnIMwvLRltKhzNpem/view" target="_blank" rel="noopener">
-          <div class="lab-img clickable">
-            <img src="files/workplace-violence-poster.jpg" alt="Workplace Violence Poster" />
+    <div class="poster-carousel" aria-label="Conference Posters">
+      <button class="carousel-btn" onclick="moveCarousel(-1)" aria-label="Previous">&#8249;</button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="posterTrack">
+          <div class="carousel-slide">
+            <a href="https://drive.google.com/file/d/1tFSBnp_8B-YDHZlTnIMwvLRltKhzNpem/view" target="_blank" rel="noopener">
+              <img src="files/workplace-violence-poster.jpg" alt="Workplace Violence Poster" />
+            </a>
           </div>
-        </a>
-        <p>Click to view full size</p>
-      </div>
-
-      <div class="inside-lab-item">
-        <a href="https://drive.google.com/file/d/1OwXiy-lE5VpZZSPg08znYjrSGoDINBzO/view" target="_blank" rel="noopener">
-          <div class="lab-img clickable">
-            <img src="files/doing-well-poster.jpg" alt="Doing Well Poster" />
+          <div class="carousel-slide">
+            <a href="https://drive.google.com/file/d/1OwXiy-lE5VpZZSPg08znYjrSGoDINBzO/view" target="_blank" rel="noopener">
+              <img src="files/doing-well-poster.jpg" alt="Doing Well Poster" />
+            </a>
           </div>
-        </a>
-        <p>Click to view full size</p>
-      </div>
-
-      <div class="inside-lab-item">
-        <a href="https://drive.google.com/file/d/1b7IDNvrGlbRomAW-0R-m2ofjFkWyqub1/view" target="_blank" rel="noopener">
-          <div class="lab-img clickable">
-            <img src="files/implicit-aggression-poster.jpg" alt="Implicit Aggression Poster" />
+          <div class="carousel-slide">
+            <a href="https://drive.google.com/file/d/1b7IDNvrGlbRomAW-0R-m2ofjFkWyqub1/view" target="_blank" rel="noopener">
+              <img src="files/implicit-aggression-poster.jpg" alt="Implicit Aggression Poster" />
+            </a>
           </div>
-        </a>
-        <p>Click to view full size</p>
+        </div>
       </div>
-
+      <button class="carousel-btn" onclick="moveCarousel(1)" aria-label="Next">&#8250;</button>
     </div>
+    <div class="carousel-dots">
+      <button class="carousel-dot active" onclick="goToSlide(0)" aria-label="Poster 1"></button>
+      <button class="carousel-dot" onclick="goToSlide(1)" aria-label="Poster 2"></button>
+      <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Poster 3"></button>
+    </div>
+    <p class="carousel-hint">Click poster to open full size &rarr;</p>
 
     <div class="inside-lab-team">
       <div class="inside-lab-item">
@@ -224,7 +223,18 @@
       document.getElementById('navLinks').classList.toggle('open');
     }
 
+    let carouselIdx = 0;
+    const totalSlides = 3;
 
+    function moveCarousel(dir) {
+      goToSlide((carouselIdx + dir + totalSlides) % totalSlides);
+    }
+
+    function goToSlide(idx) {
+      carouselIdx = idx;
+      document.getElementById('posterTrack').style.transform = `translateX(-${idx * 100}%)`;
+      document.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+    }
   </script>
 </body>
 </html>
