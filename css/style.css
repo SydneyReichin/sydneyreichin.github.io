@@ -541,6 +541,14 @@ footer { background: var(--dark-navy); }
 
 .research-focus-right .section-label { color: var(--periwinkle); opacity: 0.85; }
 
+.research-focus-squid {
+  font-style: italic;
+  opacity: 0.65;
+  border-left: 2px solid var(--periwinkle);
+  padding-left: 20px;
+  margin-bottom: 4px;
+}
+
 .research-focus-right h2 {
   font-family: var(--serif);
   font-size: 1.55rem;
