@@ -624,9 +624,9 @@ footer { background: var(--dark-navy); }
   gap: 6px;
 }
 
-.stream-amber .stream-content,
-.stream-orange .stream-content,
-.stream-blue   .stream-content { background: white; }
+.stream-amber .stream-content { background: #fdf6e8; }
+.stream-orange .stream-content { background: #fdf1eb; }
+.stream-blue   .stream-content { background: #f2f4fb; }
 
 .stream-content h2 {
   font-family: var(--serif);
