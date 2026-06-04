@@ -526,26 +526,12 @@ footer { background: var(--dark-navy); }
 
 .research-focus { display: flex; min-height: 340px; }
 
-.research-focus-left {
-  background: var(--very-light);
-  color: var(--dark-navy);
-  width: 34%;
-  padding: 72px 52px;
-  display: flex;
-  align-items: center;
-}
-
-.research-focus-left p {
-  font-size: 0.9rem;
-  line-height: 2.05;
-  font-style: italic;
-  opacity: 0.65;
-}
+.research-focus-left { display: none; }
 
 .research-focus-right {
   background: var(--dark-navy);
   color: white;
-  width: 66%;
+  width: 100%;
   padding: 72px 80px;
   display: flex;
   flex-direction: column;
