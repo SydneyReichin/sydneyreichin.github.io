@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Updates | SQUID Lab</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="files/logo-color.png" alt="SQUID Lab" class="nav-logo-img" />
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="updates.html" class="active">Lab Updates</a></li>
+      <li><a href="people.html">People</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="application.html">Undergraduate Application</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── BANNER ── -->
+  <section class="page-banner banner-slate">
+    <h1>Lab Updates</h1>
+  </section>
+
+  <!-- ── UPDATES ── -->
+  <section class="updates-section">
+  <div class="updates-inner">
+
+    <!-- Most recent updates go at the top. Copy the block below to add new ones. -->
+
+    <div class="update-item">
+      <div class="update-meta">
+        <span class="update-date">August 18, 2025</span>
+      </div>
+      <div class="update-body">
+        <div class="update-photo-wrap">
+          <div class="update-photo">
+            <img src="files/Singer.jpg" alt="Sarah Singer" />
+          </div>
+        </div>
+        <div class="update-text">
+          <h2>Welcome, Sarah Singer!</h2>
+          <p>We are thrilled to welcome Sarah Singer as an incoming first-year PhD student in the SQUID Lab. Sarah graduated from William &amp; Mary with a B.A. in Psychology in May 2025. We are so excited to have her join the team!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="files/logo-white.png" alt="SQUID Lab" />
+      </div>
+      <div class="footer-col-center">
+        <p>Department of Psychology</p>
+        <p>College of Humanities and Social Sciences</p>
+        <p>North Carolina State University &middot; Raleigh, NC 27607</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="updates.html">Lab Updates</a>
+        <a href="people.html">People</a>
+        <a href="research.html">Research</a>
+        <a href="application.html">Apply</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 SQUID Lab &mdash; North Carolina State University</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

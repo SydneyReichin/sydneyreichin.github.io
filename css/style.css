@@ -375,13 +375,14 @@ footer { background: var(--dark-navy); }
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  min-width: 280px;
-  width: 280px;
+  min-width: 260px;
+  width: 260px;
 }
 
 .member-photo {
-  width: 280px;
-  height: 350px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
   background: var(--slate-blue);
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(28,44,90,0.18);
@@ -424,6 +425,85 @@ footer { background: var(--dark-navy); }
   opacity: 0.82;
   margin-bottom: 32px;
   max-width: 520px;
+}
+
+/* space between team members */
+.team-member + .team-member {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px solid rgba(28,44,90,0.1);
+}
+
+/* ══════════════════════════════
+   LAB UPDATES PAGE
+══════════════════════════════ */
+
+.updates-section {
+  background: var(--very-light);
+  padding: 80px;
+}
+
+.updates-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.update-item {
+  padding: 52px 0;
+  border-bottom: 1px solid rgba(28,44,90,0.1);
+}
+
+.update-item:first-child { padding-top: 0; }
+
+.update-date {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--slate-blue);
+  margin-bottom: 24px;
+}
+
+.update-body {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.update-photo-wrap { flex-shrink: 0; }
+
+.update-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(28,44,90,0.14);
+}
+
+.update-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.update-text { flex: 1; }
+
+.update-text h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-navy);
+  margin-bottom: 14px;
+  letter-spacing: -0.2px;
+}
+
+.update-text p {
+  font-size: 0.9rem;
+  line-height: 1.88;
+  color: var(--dark-navy);
+  opacity: 0.82;
 }
 
 /* ══════════════════════════════
@@ -1038,7 +1118,7 @@ footer { background: var(--dark-navy); }
   .team-section { padding: 48px 24px; }
   .team-member { flex-direction: column; gap: 28px; }
   .member-photo-wrap { width: 100%; min-width: unset; }
-  .member-photo { width: 100%; height: 300px; }
+  .member-photo { width: 220px; height: 220px; }
 
   .research-focus { flex-direction: column; }
   .research-focus-left { display: none; }
