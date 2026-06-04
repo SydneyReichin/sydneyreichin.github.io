@@ -624,21 +624,48 @@ footer { background: var(--dark-navy); }
   gap: 6px;
 }
 
-.stream-amber .stream-content { background: #fdf6e8; }
-.stream-orange .stream-content { background: #fdf1eb; }
-.stream-blue   .stream-content { background: #f2f4fb; }
+/* Accent color left panels — art replaced by structural color blocks */
+.stream-amber .stream-img  { background: var(--amber); }
+.stream-orange .stream-img { background: var(--orange); }
+.stream-blue   .stream-img { background: var(--slate-blue); }
+
+/* Hide artwork images */
+.stream-img img { display: none; }
+
+/* Faint Roman numerals as editorial decoration */
+.stream-amber  .stream-img::before { content: "I"; }
+.stream-orange .stream-img::before { content: "II"; }
+.stream-blue   .stream-img::before { content: "III"; }
+
+.stream-amber  .stream-img::before,
+.stream-orange .stream-img::before,
+.stream-blue   .stream-img::before {
+  position: absolute;
+  font-family: var(--serif);
+  font-size: 20rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.13);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Content panels: clean white, dark navy headings */
+.stream-amber  .stream-content,
+.stream-orange .stream-content,
+.stream-blue   .stream-content { background: white; }
 
 .stream-content h2 {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--dark-navy);
   letter-spacing: -0.2px;
   margin-bottom: 6px;
 }
-
-.stream-amber .stream-content h2 { color: var(--amber); }
-.stream-orange .stream-content h2 { color: var(--orange); }
-.stream-blue   .stream-content h2 { color: var(--slate-blue); }
 
 .stream-content .stream-desc {
   font-size: 0.9rem;
