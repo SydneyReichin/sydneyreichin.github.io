@@ -1307,6 +1307,10 @@ footer { background: var(--dark-navy); }
   .hero { padding: 64px 28px; min-height: unset; }
   .hero-content h1 { font-size: 2.1rem; }
 
+  .page-banner::after,
+  .contact-banner::after,
+  .app-header::after { display: none; }
+
   .home-split { flex-direction: column; }
   .home-news, .home-featured { width: 100%; }
   .home-news { padding: 44px 28px; }
