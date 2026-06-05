@@ -130,6 +130,7 @@ body > nav {
 .btn-navy  { background: var(--dark-navy);   color: white; }
 
 .btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-sm { font-size: 0.65rem; }
 
 /* ══════════════════════════════
    FOOTER
@@ -245,21 +246,6 @@ footer { background: var(--dark-navy); }
 
 .hero-tagline {
   margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.tagline-lead {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-}
-
-.tagline-statement {
   font-family: var(--sans);
   font-size: 0.82rem;
   font-weight: 400;
@@ -393,6 +379,8 @@ footer { background: var(--dark-navy); }
 
 .banner-slate { background: var(--slate-blue); }
 .banner-navy  { background: var(--dark-navy); }
+
+.link-navy { color: var(--dark-navy); }
 
 .banner-sub {
   color: rgba(255,255,255,0.75);
@@ -620,8 +608,6 @@ footer { background: var(--dark-navy); }
 
 .research-focus { display: flex; min-height: 340px; }
 
-.research-focus-left { display: none; }
-
 .research-focus-right {
   background: var(--very-light);
   color: var(--dark-navy);
@@ -685,9 +671,6 @@ footer { background: var(--dark-navy); }
 .research-streams li:hover {
   padding-left: 28px;
 }
-.research-streams li:nth-child(1):hover { border-left-color: var(--amber); }
-.research-streams li:nth-child(2):hover { border-left-color: var(--orange); }
-.research-streams li:nth-child(3):hover { border-left-color: var(--slate-blue); }
 
 .research-streams li a {
   color: inherit;
@@ -968,7 +951,6 @@ footer { background: var(--dark-navy); }
   transition: transform 0.3s ease;
 }
 
-.inside-lab-item .lab-img.clickable { cursor: pointer; }
 .inside-lab-item a:hover .lab-img img { transform: scale(1.03); }
 
 .inside-lab-team { display: flex; justify-content: center; }
@@ -1339,7 +1321,6 @@ footer { background: var(--dark-navy); }
   .member-photo { width: 220px; height: 220px; }
 
   .research-focus { flex-direction: column; }
-  .research-focus-left { display: none; }
   .research-focus-right { width: 100%; padding: 48px 28px; }
 
   /* On mobile: stack image above content, remove clip-path */
