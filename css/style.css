@@ -998,7 +998,7 @@ footer { background: var(--dark-navy); }
   z-index: 1;
 }
 
-.app-wave { display: block; width: 100%; background: var(--dark-navy); line-height: 0; }
+.app-wave { display: block; width: 100%; background: transparent; line-height: 0; }
 .app-wave svg { display: block; width: 100%; }
 
 .app-form-section {
