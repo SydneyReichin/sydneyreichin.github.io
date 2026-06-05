@@ -204,7 +204,7 @@ footer { background: var(--dark-navy); }
   position: absolute;
   width: 380px;
   opacity: 0.045;
-  right: -40px;
+  right: 60px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
