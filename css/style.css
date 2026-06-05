@@ -636,12 +636,12 @@ footer { background: var(--dark-navy); }
 .stream-blue   .stream-img::before {
   position: absolute;
   font-family: var(--serif);
-  font-size: 20rem;
+  font-size: 8rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.13);
+  color: rgba(255,255,255,0.25);
   top: 50%;
   left: 9%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   line-height: 1;
   user-select: none;
   pointer-events: none;
