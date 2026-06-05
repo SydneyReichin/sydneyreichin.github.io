@@ -174,7 +174,7 @@ footer { background: var(--dark-navy); }
   transition: color 0.18s;
 }
 
-.footer-nav a:hover { color: white; }
+.footer-nav a:hover { color: var(--periwinkle); }
 
 .footer-bottom {
   text-align: center;
@@ -472,12 +472,24 @@ footer { background: var(--dark-navy); }
 }
 
 .member-role {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 2.5px;
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--slate-blue);
+  color: white;
+  background: var(--slate-blue);
+  padding: 4px 14px;
+  border-radius: 20px;
   margin-bottom: 26px;
+}
+
+.member-role.role-director {
+  background: var(--amber);
+}
+
+.member-role.role-student {
+  background: var(--periwinkle);
 }
 
 .member-bio {
@@ -515,6 +527,7 @@ footer { background: var(--dark-navy); }
   background: white;
   border-radius: 6px;
   border-top: 4px solid var(--periwinkle);
+
   box-shadow: 0 2px 20px rgba(28,44,90,0.07);
   padding: 40px 48px;
   margin-bottom: 28px;
@@ -525,6 +538,10 @@ footer { background: var(--dark-navy); }
   box-shadow: 0 8px 36px rgba(28,44,90,0.12);
   transform: translateY(-3px);
 }
+
+.update-item.update-welcome  { border-top-color: var(--periwinkle); }
+.update-item.update-news     { border-top-color: var(--amber); }
+.update-item.update-pub      { border-top-color: var(--slate-blue); }
 
 .update-date {
   display: inline-block;
@@ -796,6 +813,13 @@ footer { background: var(--dark-navy); }
   line-height: 1.5;
   opacity: 0.65;
   font-style: italic;
+}
+
+.pub-authors .highlight {
+  font-weight: 700;
+  font-style: normal;
+  opacity: 1;
+  color: var(--slate-blue);
 }
 
 /* ── POSTER CAROUSEL ── */
