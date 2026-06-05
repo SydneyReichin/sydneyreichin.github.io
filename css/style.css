@@ -955,7 +955,7 @@ footer { background: var(--dark-navy); }
   font-size: 11rem;
   font-weight: 700;
   color: rgba(255,255,255,0.07);
-  bottom: -20px;
+  bottom: 0;
   right: -10px;
   line-height: 1;
   user-select: none;
