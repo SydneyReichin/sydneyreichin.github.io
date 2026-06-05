@@ -377,6 +377,16 @@ footer { background: var(--dark-navy); }
 .banner-slate { background: var(--slate-blue); }
 .banner-navy  { background: var(--dark-navy); }
 
+.banner-sub {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.88rem;
+  line-height: 1.8;
+  max-width: 580px;
+  margin: 16px auto 0;
+  position: relative;
+  z-index: 1;
+}
+
 /* ── BACK TO TOP ── */
 .back-to-top {
   position: fixed;
