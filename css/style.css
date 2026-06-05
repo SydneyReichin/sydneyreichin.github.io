@@ -344,6 +344,24 @@ footer { background: var(--dark-navy); }
 .page-banner {
   padding: 76px 40px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner::after {
+  content: attr(data-word);
+  position: absolute;
+  font-family: var(--serif);
+  font-size: 11rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.07);
+  bottom: -20px;
+  right: -10px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -4px;
 }
 
 .page-banner h1 {
@@ -352,10 +370,40 @@ footer { background: var(--dark-navy); }
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: -0.3px;
+  position: relative;
+  z-index: 1;
 }
 
 .banner-slate { background: var(--slate-blue); }
 .banner-navy  { background: var(--dark-navy); }
+
+/* ── BACK TO TOP ── */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--dark-navy);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(28,44,90,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 200;
+}
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.back-to-top:hover { transform: translateY(-3px); }
 
 /* ══════════════════════════════
    PEOPLE PAGE
@@ -593,6 +641,17 @@ footer { background: var(--dark-navy); }
   color: inherit;
   text-decoration: none;
   display: block;
+}
+
+.research-streams li.stream-active {
+  border-left-color: white;
+  padding-left: 28px;
+  opacity: 1;
+}
+
+.research-streams li:not(.stream-active) {
+  opacity: 0.65;
+  transition: opacity 0.3s, border-color 0.2s, padding-left 0.2s;
 }
 
 /* ── STREAM SECTIONS (diagonal overlap) ── */
@@ -889,6 +948,26 @@ footer { background: var(--dark-navy); }
   pointer-events: none;
 }
 
+.app-header::after {
+  content: attr(data-word);
+  position: absolute;
+  font-family: var(--serif);
+  font-size: 11rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.07);
+  bottom: -20px;
+  right: -10px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -4px;
+}
+
+.app-header h1,
+.app-header p,
+.app-header-logo { position: relative; z-index: 1; }
+
 .app-header-logo {
   display: flex;
   align-items: center;
@@ -1017,6 +1096,15 @@ footer { background: var(--dark-navy); }
 
 .btn-submit:hover { background: var(--medium-navy); transform: translateY(-1px); }
 
+.form-success {
+  text-align: center;
+  padding: 60px 40px;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--dark-navy);
+}
+.form-success p { margin-top: 12px; font-family: var(--sans); font-size: 0.88rem; color: var(--slate-blue); }
+
 /* ══════════════════════════════
    CONTACT PAGE
 ══════════════════════════════ */
@@ -1038,6 +1126,22 @@ footer { background: var(--dark-navy); }
   inset: 0;
   background: radial-gradient(ellipse at 40% 50%, rgba(140,160,216,0.07) 0%, transparent 65%);
   pointer-events: none;
+}
+
+.contact-banner::after {
+  content: 'CONTACT';
+  position: absolute;
+  font-family: var(--serif);
+  font-size: 11rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.07);
+  bottom: -20px;
+  right: -10px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -4px;
 }
 
 .contact-banner-inner {
