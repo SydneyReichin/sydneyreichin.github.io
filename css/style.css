@@ -200,6 +200,18 @@ footer { background: var(--dark-navy); }
   overflow: hidden;
 }
 
+.hero-squid-watermark {
+  position: absolute;
+  width: 520px;
+  opacity: 0.045;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+  filter: brightness(0) invert(1);
+}
+
 .hero::before {
   content: '';
   position: absolute;
